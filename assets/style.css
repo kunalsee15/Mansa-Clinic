@@ -1230,4 +1230,11 @@ button {
   .doctor-photo {
     height: 260px;
   }
+   @media (max-width: 480px) {
+  .hero-content { padding: 60px 0 50px; }
+  .hero p.lead { font-size: 0.95rem; }
+  .hero-badge { font-size: 0.7rem; padding: 6px 12px; }
+  .hero-facts { gap: 16px; }
+  .hero-fact { font-size: 0.85rem; }
+}
 }
