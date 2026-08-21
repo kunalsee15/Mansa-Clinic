@@ -399,7 +399,7 @@ button {
 
 .hero h1 {
   color: var(--white);
-  font-size: clamp(2.1rem, 4.6vw, 3.1rem);
+  font-size: clamp(1.5rem, 6vw, 3.1rem);
   line-height: 1.12;
   margin-bottom: 20px;
 }
