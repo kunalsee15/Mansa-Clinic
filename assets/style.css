@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Mansa Clinic — shared stylesheet
-   Replicates the existing Lovable-built site: teal/sage palette, warm
-   orange CTA accent, pill buttons, soft cards, clean sans-serif type.
-   ========================================================================== */
 
 :root {
   --teal-900: #0d3d38;
@@ -539,7 +534,7 @@ button {
   box-shadow: var(--shadow-md);
   width: 100%;
   height: 380px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .split h2 {
