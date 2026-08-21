@@ -357,15 +357,15 @@ button {
   overflow: hidden;
 }
 
-.hero-bg::before {
-  content: "";
+.hero-bg {
   position: absolute;
   inset: 0;
-  opacity: 0.5;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><g fill="none" stroke="white" stroke-width="1.2" opacity="0.35"><circle cx="500" cy="120" r="170"/><circle cx="540" cy="120" r="120"/><path d="M0 420 L120 420 L150 350 L190 480 L230 300 L270 420 L600 420" stroke-width="2"/></g></svg>');
-  background-repeat: no-repeat;
-  background-position: right top, left 60% bottom;
-  background-size: 640px 640px;
+  background-image:
+    linear-gradient(115deg, rgba(6, 34, 30, 0.88) 0%, rgba(6, 34, 30, 0.75) 50%, rgba(6, 34, 30, 0.55) 100%),
+    url('assets/hero-bg.jpg');
+  background-size: contain;
+  background-position: center;
+  z-index: 0;
 }
 
 .hero-bg::after {
@@ -1236,5 +1236,11 @@ button {
   .hero-badge { font-size: 0.7rem; padding: 6px 12px; }
   .hero-facts { gap: 16px; }
   .hero-fact { font-size: 0.85rem; }
-}
-}
+  }
+   @media (max-width: 480px) {
+     .hero-bg {
+       background-image:
+         linear-gradient(115deg, rgba(6, 34, 30, 0.94) 0%, rgba(6, 34, 30, 0.85) 60%, rgba(6, 34, 30, 0.75) 100%),
+         url('assets/hero-bg.jpg');
+  }
+  }
