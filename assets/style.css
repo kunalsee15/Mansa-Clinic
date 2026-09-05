@@ -347,7 +347,6 @@ button {
   background-image: url('hero-bg.jpg');
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
   z-index: 0;
 }
 
